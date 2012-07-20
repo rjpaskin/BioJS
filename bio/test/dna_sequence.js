@@ -5,7 +5,7 @@ test('Initialises correctly', function() {
       obj = new Bio.DNASequence(seq);
   
   equal(seq, obj.toString(), 'Assigns sequence correctly');
-  equal(seq.length, obj.toString().length, 'Sequence correct length');
+  equal(seq.length, obj.toString().length, 'Sequence.toString() correct length');
   equal(seq.length, obj.length, 'Sequence correct length');
 });
 
@@ -14,7 +14,7 @@ test('Strips out non-DNA letters', function() {
       obj = new Bio.DNASequence(seq);
   
   equal('ATCGATCG', obj.toString(), 'Assigns sequence correctly');
-  equal('ATCGATCG'.length, obj.toString().length, 'Sequence correct length');
+  equal('ATCGATCG'.length, obj.toString().length, 'Sequence.toString() correct length');
   equal('ATCGATCG'.length, obj.length, 'Sequence correct length');
 });
 

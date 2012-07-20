@@ -29,7 +29,7 @@
     return count;
   };
   
-  // Reverse the sequence.
+  // Reverse the sequence, returning a new Sequence object.
   p.reverse = function() {
     return new this.constructor(this.seq.split("").reverse().join(""));
   };
